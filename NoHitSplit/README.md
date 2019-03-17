@@ -1,3 +1,3 @@
 # NoHitSplit
 
-Simple console tool for no hit runs. (WORK IN PROGRESS)
+Simple console tool for no hit runs. (WORK IN PROGRESS) 
