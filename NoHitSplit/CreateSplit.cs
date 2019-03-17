@@ -28,7 +28,7 @@ namespace NoHitSplit {
                         string choice = Console.ReadLine();
                         if (choice.ToLower().Equals("y")) {
                             Console.WriteLine("Overwriting File!");
-                            filePath = "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/" + splitName + ".txt";
+                            filePath = "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/res/" + splitName + ".txt";
                             Split.DeleteSplit(i, filePath);
                             
                             Thread.Sleep(100);

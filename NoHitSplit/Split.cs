@@ -11,12 +11,12 @@ namespace NoHitSplit {
         private string Content;
         private static IList<Split> splitList = new List<Split>();
 
-        public Split(string name, string content) {
+        public Split(string name, string content) { //TODO add statistics such as pb, last, and current.
             Name = name;
             Content = content;
         }
 
-        public static void generateList(string filePath) {
+        public static void GenerateList(string filePath) {
             StringBuilder sb = new StringBuilder();
             string[] files = Directory.GetFiles(filePath, "*.txt");
             string splitFileName = "";
@@ -55,7 +55,7 @@ namespace NoHitSplit {
             File.Delete(f);
         }
         
-        public static IList<Split> getList() {
+        public static IList<Split> GetList() {
             return splitList;
         }
 

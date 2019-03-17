@@ -1,5 +1,6 @@
 using System;
 using System.CodeDom.Compiler;
+using System.Net.Security;
 using System.Runtime.InteropServices;
 
 namespace NoHitSplit {
@@ -13,7 +14,18 @@ namespace NoHitSplit {
                     Environment.Exit(0);
                 }
                 if (result == 1) {
-                    //TODO
+                    Console.Clear();
+                    Console.WriteLine("Select a split number:");
+                    DisplaySplit.LoadSplits();
+                    string splitChoice = Console.ReadLine();
+                    if (int.TryParse(splitChoice, out int splitResult) && splitResult >= 0 
+                        && splitResult <= Split.GetListLength()) {
+                        DisplaySplit.SplitChoice(splitResult);
+                    }
+                    else {
+                        Console.WriteLine("Please choose an existing split.");
+                    }
+                   
                 }
                 if (result == 2) {
                     CreateSplit.SplitCreator();
