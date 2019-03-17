@@ -1,0 +1,12 @@
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.exe
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/bin/Debug/NoHitSplit.exe
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/bin/Debug/NoHitSplit.pdb
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.csprojAssemblyReference.cache
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.csproj.CoreCompileInputs.cache
+/media/ethan/EIN/Personal Projects/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.pdb
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Debug/NoHitSplit.exe
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Debug/NoHitSplit.pdb
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.csprojAssemblyReference.cache
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.csproj.CoreCompileInputs.cache
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.exe
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Debug/NoHitSplit.pdb

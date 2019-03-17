@@ -1,0 +1,6 @@
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/NoHitSplit.exe
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/NoHitSplit.pdb
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.csprojAssemblyReference.cache
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.csproj.CoreCompileInputs.cache
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.exe
+/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.pdb
