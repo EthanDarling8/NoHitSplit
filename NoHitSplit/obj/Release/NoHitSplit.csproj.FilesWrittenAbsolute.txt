@@ -1,0 +1,5 @@
+/home/ethan/Desktop/NoHitSplit/NoHitSplit/obj/Release/.NETFramework,Version=v4.6.1.AssemblyAttribute.cs
+/home/ethan/Desktop/NoHitSplit/NoHitSplit/bin/Release/NoHitSplit.pdb
+/home/ethan/Desktop/NoHitSplit/NoHitSplit/bin/Release/NoHitSplit.exe
+/home/ethan/Desktop/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.exe
+/home/ethan/Desktop/NoHitSplit/NoHitSplit/obj/Release/NoHitSplit.pdb

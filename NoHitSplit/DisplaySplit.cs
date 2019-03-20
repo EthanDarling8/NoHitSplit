@@ -9,11 +9,11 @@ namespace NoHitSplit {
             }
         }
 
-        public static void SplitChoice(int intended) {
+        public static void SplitChoice(int n) {
             Console.Clear();
             try {
                 using (StreamReader reader = new StreamReader(
-                    "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/" + Split.GetName(intended) + ".txt")) {
+                    Directory.GetCurrentDirectory() + "/splits/" + Split.GetName(n) + ".txt")) {
                     while (!reader.EndOfStream) {
                         string temp = reader.ReadLine();
                         if (temp != null && temp.StartsWith("~")) {
@@ -35,7 +35,7 @@ namespace NoHitSplit {
         private static void ReadSplitNames(int s) {
             try {
                 using (StreamReader reader = new StreamReader(
-                    "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/" + Split.GetName(s) + ".txt")) {
+                    Directory.GetCurrentDirectory() + "/splits/" + Split.GetName(s) + ".txt")) {
                     while (!reader.EndOfStream) {
                         string temp = reader.ReadLine();
                         if (temp != null && temp.StartsWith("~")) {

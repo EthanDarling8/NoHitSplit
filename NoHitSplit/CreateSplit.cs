@@ -28,7 +28,7 @@ namespace NoHitSplit {
                         string choice = Console.ReadLine();
                         if (choice.ToLower().Equals("y")) {
                             Console.WriteLine("Overwriting File!");
-                            filePath = "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/res/" + splitName + ".txt";
+                            filePath = Directory.GetCurrentDirectory() + "/splits/" + splitName + ".txt";
                             Split.DeleteSplit(i, filePath);
                             
                             Thread.Sleep(100);
@@ -36,20 +36,20 @@ namespace NoHitSplit {
                     }
                     Console.Clear();
                 }
-                filePath = "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/" + splitName + ".txt";
+                filePath = Directory.GetCurrentDirectory() + "/splits/" + splitName + ".txt";
                 WriteSplit(splitName);
             }
             else if (Split.GetListLength() == 0) { //If the list doesn't have anything in it
-                filePath = "/home/ethan/Documents/NoHitSplit/NoHitSplit/NoHitSplit/bin/Release/" + splitName + ".txt";
+                filePath = Directory.GetCurrentDirectory() + "/splits/" + splitName + ".txt";
                 WriteSplit(splitName);
 
             }
         }
 
-        private static void WriteSplit(string splitFileName) {
+        private static void WriteSplit(string splitName) {
             try { //Writing to file 
-                using (StreamWriter writer = new StreamWriter(File.Create(splitFileName + ".txt"))) {
-                    writer.WriteLine("~" + splitFileName); //Write the name of the split to the first line with a delimiter.
+                using (StreamWriter writer = new StreamWriter(File.Create(Directory.GetCurrentDirectory() + "/splits/" + splitName + ".txt"))) {
+                    writer.WriteLine("~" + splitName); //Write the name of the split to the first line with a delimiter.
                     Console.WriteLine("Would you like to add splits (1), delete a split (2), or save and exit (0)?");
 
                     string choice = Console.ReadLine();
@@ -67,31 +67,33 @@ namespace NoHitSplit {
                         }
                     }
                 }
-                
-                StringBuilder sb = new StringBuilder();
-                using (StreamReader reader = new StreamReader(splitFileName + ".txt")) {
-                    while (!reader.EndOfStream) {
-                        string temp = reader.ReadLine();
-                        if (temp.StartsWith("~")) {
-                            temp = temp.Substring(1);
-                            splitFileName = temp;
-                            sb.Append(temp + "\n");
-                        }
-                        else 
-                            sb.Append(temp + "\n");
-                    }
-                }
-
-                Split split = new Split(splitFileName, sb.ToString());
-                Split.AddSplit(split);
             }
             catch (Exception e) {
                 Console.WriteLine("File could not be written or pathing is incorrect.");
                 Console.WriteLine(e.Message);
                 throw;
             }
+            createSplitFromWrite(splitName);
             Console.Clear();
             Intro.Instructions();
+        }
+
+        private static void createSplitFromWrite(string s) {
+            StringBuilder sb = new StringBuilder();
+            using (StreamReader reader = new StreamReader(Directory.GetCurrentDirectory() + "/splits/" + s + ".txt")) {
+                while (!reader.EndOfStream) {
+                    string temp = reader.ReadLine();
+                    if (temp.StartsWith("~")) {
+                        temp = temp.Substring(1);
+                        s = temp;
+                        sb.Append(temp + "\n");
+                    }
+                    else
+                        sb.Append(temp + "\n");
+                }
+            }
+            Split split = new Split(s, sb.ToString());
+            Split.AddSplit(split);
         }
     }
 }
